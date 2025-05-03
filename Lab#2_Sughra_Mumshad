@@ -1,0 +1,169 @@
+ What Is a Constructor?
+A constructor is a special function automatically invoked when an object of a class is created. Its primary role is to initialize the object's data members and allocate resources required for its operation. Constructors have the same name as the class and do not have a return type. 
+GeeksforGeeks
++4
+W3Schools.com
++4
+upGrad
++4
+W3Schools.com
++3
+upGrad
++3
+Online Learning Platform - eVidhya
++3
+
+🔑 Key Characteristics:
+Automatic Invocation: Called automatically when an object is instantiated.
+
+No Return Type: Does not return any value, not even void.
+
+Overloading: Multiple constructors can exist with different parameter lists.
+
+Encapsulation: Enables controlled initialization of objects.
+Coding Interview Pro
+Online Learning Platform - eVidhya
++2
+upGrad
++2
+Coding Interview Pro
++2
+
+🧱 Types of Constructors in C++
+1. Default Constructor
+A constructor that takes no parameters. If no constructor is defined, the compiler provides a default one.
+W3Schools.com
++5
+Intellipaat
++5
+GeeksforGeeks
++5
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    MyClass() {
+        // Initialization code
+    }
+};
+2. Parameterized Constructor
+Accepts parameters to initialize an object with specific values.
+GeeksforGeeks
++1
+GeeksforGeeks
++1
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    int value;
+    MyClass(int val) {
+        value = val;
+    }
+};
+3. Copy Constructor
+Creates a new object as a copy of an existing object.
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    int value;
+    MyClass(const MyClass &obj) {
+        value = obj.value;
+    }
+};
+4. Move Constructor
+Transfers resources from a temporary object to a new object, avoiding deep copies.
+GeeksforGeeks
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    int* data;
+    MyClass(MyClass&& obj) {
+        data = obj.data;
+        obj.data = nullptr;
+    }
+};
+🔁 Constructor Overloading
+Constructor overloading allows a class to have multiple constructors with different parameter lists, enabling objects to be initialized in various ways. 
+upGrad
++1
+GeeksforGeeks
++1
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    int x, y;
+    MyClass() {
+        x = 0; y = 0;
+    }
+    MyClass(int a) {
+        x = a; y = 0;
+    }
+    MyClass(int a, int b) {
+        x = a; y = b;
+    }
+};
+🧹 What Is a Destructor?
+A destructor is a special member function invoked automatically when an object goes out of scope or is explicitly deleted. Its primary purpose is to release resources acquired by the object during its lifetime. 
+Coding Interview Pro
++1
+Wikipedia
++1
+Wikipedia
+
+🔑 Key Characteristics:
+Automatic Invocation: Called automatically when an object is destroyed.
+
+No Parameters: Cannot accept arguments.
+
+No Return Type: Does not return any value.
+
+No Overloading: Only one destructor per class.
+
+Resource Cleanup: Used to release memory, close files, etc.
+GeeksforGeeks
+Online Learning Platform - eVidhya
++1
+Coding Interview Pro
++1
+Coding Interview Pro
+
+cpp
+Copy
+Edit
+class MyClass {
+public:
+    ~MyClass() {
+        // Cleanup code
+    }
+};
+🔄 Constructor vs. Destructor
+Feature	Constructor	Destructor
+Purpose	Initialize objects	Clean up before object destruction
+Invocation	Automatically during object creation	Automatically during object destruction
+Parameters	Can have parameters	Cannot have parameters
+Return Type	None	None
+Overloading	Allowed	Not allowed
+Multiple per Class	Yes	No
+
+🧠 Why Use Constructors and Destructors?
+Automatic Initialization: Ensure objects start in a valid state.
+
+Resource Management: Acquire and release resources efficiently.
+
+Code Clarity: Encapsulate setup and teardown logic within the class.
+
+Error Prevention: Reduce the risk of uninitialized variables and resource leaks
