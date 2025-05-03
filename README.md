@@ -128,16 +128,17 @@ class Circle(Shape):
 ✔ Security – Encapsulation protects data integrity.
 
 5. Disadvantages of OOP
+   
 ❌ Steeper learning curve compared to procedural programming.
 ❌ Slower execution in some cases due to abstraction.
 ❌ Overhead in small programs where OOP may be unnecessary.
 
-6. OOP in Different Languages
+7. OOP in Different Languages
 Language	Class Syntax	Inheritance	Encapsulation
 Python	class Car:	class Child(Parent):	self.__private_var
 Java	class Car { ... }	class Child extends Parent	private int var;
 C++	class Car { ... };	class Child : public Parent	private: int var;
-7. Real-World Applications
+8. Real-World Applications
 Game Development (Characters, Items as Objects)
 
 Banking Systems (Accounts, Transactions)
