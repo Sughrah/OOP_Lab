@@ -111,27 +111,7 @@ Pointers
 • Dynamic arrays for tasks/habits if user adds many.
 • Object references for passing data between modules. 
 
-Productivity & Lifestyle Management App
-A comprehensive C++ application designed to help users manage their productivity, fitness, finances, habits, and mental wellness through an integrated platform.
 
-Features
-🔐 User Management
-User registration and authentication system
-
-Profile management with personal preferences and goals
-
-Secure password storage with encryption
-
-📚 Study Section
-Smart To-Do List with priority levels (High, Medium, Low)
-
-Pomodoro-style study timer with break reminders
-
-Task completion streak tracking
-
-Daily review and progress summaries
-
-Intelligent task suggestions based on priorities
 
 💪 Fitness Section
 BMI calculator with category classification
